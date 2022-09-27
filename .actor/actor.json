@@ -1,93 +1,43 @@
 {
-    "actorSpecification": 1,
-    "name": "crawler-google-places",
-    "title": "Google Search Scraper",
-    "description": "", //N<=200, optional, default ""
-    "version": "0.0.14",
-    "storages": {
-        "dataset": {
-            "actorSpecification": 1,
-            "title": "Google Places Dataset",
-            "description": "",
-            "views": {
-                "places": {
-                    "title": "Overview",
-                    "description": "It can take about one minute until the first results are available.",
-                    "transformation": {
-                        "fields": [
-                            "title",
-                            "categoryName",
-                            "address",
-                            "street",
-                            "url",
-                            "city",
-                            "state",
-                            "countryCode",
-                            "website",
-                            "phone",
-                            "totalScore",
-                            "reviewsCount"
-                        ]
-                    },
-                    "display": {
-                        "component": "table",
-                        "columns": [
-                            {
-                                "label": "Place name",
-                                "format": "link",
-                                "field": "$url",
-                                "textField": "$title"
-                            },
-                            {
-                                "label": "Total score",
-                                "format": "number",
-                                "field": "$totalScore"
-                            },
-                            {
-                                "label": "Reviews count",
-                                "format": "number",
-                                "field": "$reviewsCount"
-                            },
-                            {
-                                "label": "Street",
-                                "format": "text",
-                                "field": "$street"
-                            },
-                            {
-                                "label": "City",
-                                "format": "text",
-                                "field": "$city"
-                            },
-                            {
-                                "label": "State",
-                                "format": "text",
-                                "field": "$state"
-                            },
-                            {
-                                "label": "Country code",
-                                "format": "text",
-                                "field": "$countryCode"
-                            },
-                            {
-                                "label": "Website",
-                                "format": "link",
-                                "field": "$website",
-                                "textField": "$website"
-                            },
-                            {
-                                "label": "Phone",
-                                "format": "text",
-                                "field": "$phone"
-                            },
-                            {
-                                "label": "Category",
-                                "format": "text",
-                                "field": "$categoryName"
-                            }
-                        ]
-                    }
-                }
-            }
-        }
-    }
+	"actorSpecification": 1,
+	"name": "crawler-google-places",
+	"title": "Google Maps Scraper",
+	"description": "", //N<=200, optional, default ""
+	"version": "1.0.0",
+	"storages": {
+		"dataset": {
+			"actorSpecification": 1,
+			"title": "Google Places Dataset",
+			"description": "",
+			"views": {
+				"places": {
+					"title": "Overview",
+					"description": "It can take about one minute until the first results are available.",
+					"transformation": {
+						"fields": [
+							"title",
+							"totalScore",
+							"reviewsCount",
+							"street",
+							"city",
+							"state",
+							"countryCode",
+							"website",
+							"phone",
+							"categoryName",
+							"url"
+						]
+					},
+					"display": {
+						"component": "table",
+						"properties": {
+							"title": {
+								"label": "Place name"
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
