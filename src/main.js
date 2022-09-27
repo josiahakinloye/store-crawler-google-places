@@ -74,11 +74,6 @@ Apify.main(async () => {
     const placesCache = new PlacesCache({ cachePlaces, cacheKey, useCachedPlaces });
     await placesCache.initialize();
 
-    // This was an input in the past
-    const maxCrawledPlaces = (searchStringsArray.length || startUrls.length)  * maxCrawledPlacesPerSearch;
-    const maxCrawledPlacesTracker = new MaxCrawledPlacesTracker(maxCrawledPlaces, maxCrawledPlacesPerSearch);
-    await maxCrawledPlacesTracker.initialize(Apify.events);
-
     /** @type {ExportUrlsDeduper | undefined} */
     let exportUrlsDeduper;
     if (exportPlaceUrls) {
@@ -132,7 +127,6 @@ Apify.main(async () => {
             const updatedStartUrls = await parseRequestsFromStartUrls(startUrls);
             const validStartRequests = getValidStartRequests(updatedStartUrls);
             validStartRequests.forEach((req) => startRequests.push(req));
-
         } else if (searchStringsArray?.length) {
             for (const searchString of searchStringsArray) {
                 // Sometimes users accidentally pass empty strings
@@ -174,7 +168,7 @@ Apify.main(async () => {
             }
 
             // use cached place ids for geolocation
-            for (const placeId of placesCache.placesInPolygon(geolocation, maxCrawledPlaces, searchStringsArray)) {
+            for (const placeId of placesCache.placesInPolygon(geolocation, maxCrawledPlacesPerSearch * searchStringsArray.length, searchStringsArray)) {
                 const searchString = searchStringsArray.filter(x => placesCache.place(placeId)?.keywords.includes(x))[0];
                 startRequests.push({
                     url: `https://www.google.com/maps/search/?api=1&query=${searchString}&query_place_id=${placeId}`,
@@ -197,6 +191,11 @@ Apify.main(async () => {
     } else {
         log.warning('Actor was restarted, skipping search step because it was already done...');
     }
+
+    // We have to define this class here because we can expand new requests during the preparation
+    const maxCrawledPlaces = startRequests.length  * maxCrawledPlacesPerSearch;
+    const maxCrawledPlacesTracker = new MaxCrawledPlacesTracker(maxCrawledPlaces, maxCrawledPlacesPerSearch);
+    await maxCrawledPlacesTracker.initialize(Apify.events);
 
     // We enqueue small part of initial requests now and the rest in background
     await setUpEnqueueingInBackground(startRequests, requestQueue, maxCrawledPlacesTracker);
