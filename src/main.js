@@ -132,6 +132,9 @@ Apify.main(async () => {
             const updatedStartUrls = await parseRequestsFromStartUrls(startUrls);
             const validStartRequests = getValidStartRequests(updatedStartUrls);
             validStartRequests.forEach((req) => startRequests.push(req));
+            // This is quite a hack but it is really an edge case. If we get search URLs from a file,
+            // we need to multiply maxCrawledPlaces by the number of URLs because otherwise the sheet is taken as 1
+            maxCrawledPlacesTracker.maxCrawledPlaces = maxCrawledPlacesPerSearch * validStartRequests.length;
 
         } else if (searchStringsArray?.length) {
             for (const searchString of searchStringsArray) {
