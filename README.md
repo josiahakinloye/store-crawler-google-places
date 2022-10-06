@@ -69,7 +69,7 @@ Apify provides you with $5 free usage credits to use every month on the Apify Fr
 If you need to get more data regularly, you should grab an Apify subscription. We recommend our $49/month Personal plan - you can get **up to 20,000 Google Maps results every month** with the free $49 in monthly usage credits from that plan! For more details about usage credits, see this video guide on ▷ [how to choose the right subscription plan](https://www.youtube.com/watch?v=s_89WpOsKRI).
 
 For more details about Google Maps scraper usage, see the [Cost of usage tab](https://apify.com/drobnikj/crawler-google-places/cost-of-usage#features). 
-<div align="center"><a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj?asrc=blog" target="_blank">
+<div><a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj?asrc=blog" target="_blank">
 <img width=20%" src="https://imgur.com/FS6hnof.png" /></a></div><br>   
 
 ## What are the advantages over the Google Maps API?
@@ -131,9 +131,9 @@ To use this tool, you need to acquire your own Google API key, as you would use 
 
 Nearby search with the official API returns only 60 results. Google Places API Radar Search overrides this limit and gets all places in a specified location.
 
-### Gas Station Scraper ⛽️
+### Gas Prices Scraper ⛽️
 
-Use [Gas Station Scraper](https://apify.com/natasha.lekh/gas-stations-scraper) to find the lowest gas prices and timestamps of price updates from gas stations in your area.
+Use [Gas Prices Scraper](https://apify.com/natasha.lekh/gas-prices-scraper) to find the lowest gas prices and timestamps of price updates from gas stations in your area.
        
 
 ## Input
@@ -174,7 +174,7 @@ Or here's its equivalent in JSON:
   "allPlacesNoSearchAction": ""
 }
 ```
-<div align="center"><a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj?asrc=blog" target="_blank">
+<div><a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj?asrc=blog" target="_blank">
 <img width=20%" src="https://imgur.com/FS6hnof.png" /></a></div><br> 
 
 ## Output
@@ -451,5 +451,5 @@ This scraper is under active development. We are always implementing new feature
 >- [CHANGELOG.md](https://github.com/drobnikj/crawler-google-places/blob/master/CHANGELOG.md) with a list of recent updates.
 
 
-<div align="center"><a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj?asrc=blog" target="_blank">
+<div><a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj?asrc=blog" target="_blank">
 <img width=20%" src="https://imgur.com/FS6hnof.png" /></a></div><br>    
