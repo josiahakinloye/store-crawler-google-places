@@ -193,7 +193,7 @@ Apify.main(async () => {
     }
 
     // We have to define this class here because we can expand new requests during the preparation
-    const maxCrawledPlaces = startRequests.length  * maxCrawledPlacesPerSearch;
+    const maxCrawledPlaces = (searchStringsArray.length || startRequests.length) * maxCrawledPlacesPerSearch;
     const maxCrawledPlacesTracker = new MaxCrawledPlacesTracker(maxCrawledPlaces, maxCrawledPlacesPerSearch);
     await maxCrawledPlacesTracker.initialize(Apify.events);
 
