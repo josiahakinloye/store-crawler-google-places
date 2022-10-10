@@ -1,13 +1,13 @@
 {
     "title": "Google Maps Scraper",
-    "description": "Provide either a keyword(s), a list of search keywords or a Google Maps URL(s) (in the \"Define the search area by other parameters\" section bellow). <br>Keep in mind they are mutually exclusive. <br> We recommend using Search term, Country and City fields as your starting point. Using Country, City or other geolocation parameters increases the maximum results over Google's limit of 120 places per search term.",
+    "description": "Provide either keyword(s), a list of keywords or a Google Maps URL(s) (in the \"Define the search area by other parameters\" section below). Keep in mind using keywords or URLs is mutually exclusive. <br> We recommend using Search term, Country and City fields as your starting point. Using Country, City or other geolocation parameters increases the maximum results over Google's limit of 120 places per search term. If you need any guidance, just <a href='https://blog.apify.com/step-by-step-guide-to-scraping-google-maps/' target='_blank' rel='noopener'>follow this tutorial.</a>",
     "type": "object",
     "schemaVersion": 1,
     "properties": {
         "searchStringsArray": {
             "title": "Search term(s)",
             "type": "array",
-            "description": "Type what you want to search for as you would write it into the Google Maps search bar, e.g. 'restaurant' or 'pet shelter'. You can also add location here, e.g. `restaurant New York`, but then you will only get around 120 results per search (Google's scrolling limit on a single search).",
+            "description": "Type what you want to search for as you would write it into the Google Maps search bar, e.g. <code>restaurant</code> or <code>pet shelter</code>. You can also add location here, e.g. `restaurant New York`, but then you will only get around 120 results per search (Google's scrolling limit on a single search).",
             "editor": "stringList",
             "prefill": [
                 "restaurant"
