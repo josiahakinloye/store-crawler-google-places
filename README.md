@@ -69,8 +69,8 @@ Apify provides you with $5 free usage credits to use every month on the Apify Fr
 If you need to get more data regularly, you should grab an Apify subscription. We recommend our $49/month Personal plan - you can get **up to 20,000 Google Maps results every month** with the free $49 in monthly usage credits from that plan! For more details about usage credits, see this video guide on ▷ [how to choose the right subscription plan](https://www.youtube.com/watch?v=s_89WpOsKRI).
 
 For more details about Google Maps scraper usage, see the [Cost of usage tab](https://apify.com/drobnikj/crawler-google-places/cost-of-usage#features). 
-<div><a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj?asrc=blog" target="_blank">
-<img width=20%" src="https://imgur.com/FS6hnof.png" /></a></div><br>   
+<a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj" target="_blank">  
+<img width="20%" src="https://imgur.com/FS6hnof.png"/> </a>
 
 ## What are the advantages over the Google Maps API?
 
@@ -174,8 +174,8 @@ Or here's its equivalent in JSON:
   "allPlacesNoSearchAction": ""
 }
 ```
-<div><a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj?asrc=blog" target="_blank">
-<img width=20%" src="https://imgur.com/FS6hnof.png" /></a></div><br> 
+<a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj" target="_blank">  
+<img width="20%" src="https://imgur.com/FS6hnof.png"/> </a>
 
 ## Output
 
@@ -451,5 +451,5 @@ This scraper is under active development. We are always implementing new feature
 >- [CHANGELOG.md](https://github.com/drobnikj/crawler-google-places/blob/master/CHANGELOG.md) with a list of recent updates.
 
 
-<div><a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj?asrc=blog" target="_blank">
-<img width=20%" src="https://imgur.com/FS6hnof.png" /></a></div><br>    
+<a href="https://console.apify.com/actors/nwua9Gu5YrADL7ZDj" target="_blank">  
+<img width="20%" src="https://imgur.com/FS6hnof.png"/> </a>
