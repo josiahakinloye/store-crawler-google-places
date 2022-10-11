@@ -7,7 +7,7 @@
         "searchStringsArray": {
             "title": "Search term(s)",
             "type": "array",
-            "description": "Type what you want to search for as you would write it into the Google Maps search bar, e.g. <code>restaurant</code> or <code>pet shelter</code>. You can also add location here, e.g. `restaurant New York`, but then you will only get around 120 results per search (Google's scrolling limit on a single search).",
+            "description": "Type what you want to search for as you would write it into the Google Maps search bar, e.g. <code>restaurant</code> or <code>pet shelter</code>. You can also add location here, e.g. `restaurant Pittsburgh`, but then you will only get around 120 results per search (Google's scrolling limit on a single search).",
             "editor": "stringList",
             "prefill": [
                 "restaurant"
@@ -513,9 +513,9 @@
         "city": {
             "title": "City",
             "type": "string",
-            "description": "Set the city where the search should be carried out, e.g., 'New York'.",
+            "description": "Set the city where the search should be carried out, e.g., 'Pittsburgh'.",
             "editor": "textfield",
-            "prefill": "New York"
+            "prefill": "Pittsburgh"
         },
         "maxCrawledPlacesPerSearch": {
             "title": "Limit the number of places per each search term/URL",
