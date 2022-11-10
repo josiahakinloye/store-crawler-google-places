@@ -1,3 +1,7 @@
+# 2022-11-10
+*Features*
+- Added `imagesCount` to output. It is displayed even if you don't extract their URLs.
+
 # 2022-09-23
 *Fixes*
 - BREAKING CHANGE: Removed `maxCrawledPlaces` from input completely (use `maxCrawledPlacesPerSearch` instead)

@@ -239,10 +239,10 @@ module.exports.handlePlaceDetail = async (options) => {
         additionalInfo: additionalInfo ? await extractAdditionalInfo({ page, placeUrl: url, jsonData }) : undefined,
         reviewsCount,
         reviewsDistribution,
+        imagesCount: jsonData?.[37]?.[1],
         // IMPORTANT: The order of actions image -> reviews is important
         // If you need to change it, you need to check the implementations
         // and where the back buttons need to be 
-
         // NOTE: Image URLs are quite rare for users to require
         // In case the back button fails, we reload the page before reviews
         imageUrls: await errorSnapshotter.tryWithSnapshot(
