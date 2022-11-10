@@ -230,6 +230,7 @@ Or here's its equivalent in JSON:
     "fourStar": 0,
     "fiveStar": 16
   },
+  "imagesCount": 34,
   "imageUrls": [
     "https://lh5.googleusercontent.com/p/AF1QipO5KXrDiwPABpf329swB-ZqgNNbwSXt2EXdcb1C=w1920-h1080-k-no",
     "https://lh5.googleusercontent.com/p/AF1QipMsy8BCwkMD8WJCNr4Qce98Tt_lLN_l1Tt1NhvI=w1920-h1080-k-no",
