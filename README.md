@@ -86,7 +86,7 @@ Web scraping is legal if you are extracting publicly available data which is mos
 
 ## How do I use Google Maps Scraper?
 
-To understand how to configure and run the scraper, follow our step-by-step guide on  [how to scrape Google Maps](https://blog.apify.com/step-by-step-guide-to-scraping-google-maps/) or [watch a short video tutorial](https://www.youtube.com/watch?v=Wzfo3qSSbtU)  &#9655; on YouTube. 
+To understand how to configure and run the scraper, follow our step-by-step guide on  [how to scrape Google Maps](https://blog.apify.com/step-by-step-guide-to-scraping-google-maps/) or [watch a short video tutorial](https://www.youtube.com/watch?v=Wzfo3qSSbtU)  &#9655; on YouTube.
 
 [![Apify - G Maps](https://img.youtube.com/vi/J43AX9wu-NI/0.jpg)](https://www.youtube.com/watch?v=J43AX9wu-NI)
 
